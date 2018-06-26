@@ -12,24 +12,30 @@
 <head>
     <title>Random Youtube Video Finder</title>
     <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/defer.css" media="nope!" onload="this.media='all'" />
+    <noscript><link type="text/css" rel="stylesheet" href="css/defer.css" /></noscript>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Finds random youtube videos." />
     <meta charset='utf-8' />
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/boilerplate.js"></script>
+    <script defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
 </head>
 
-<body>
+<body lang="en-US">
 
     <div id="test"></div>
     <div id="hover-area"></div>
 
     <div id="cover">
+        <noscript><div class="button" id="find-video">Please Enable Javascript</div></noscript>
         <button class="button" id="execute-request-button">Log In</button>
         <div class="button" id="find-video">Find Random Video</div>
         <div class="button" id="find-another">Find Another Random Video</div>
     </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/boilerplate.js"></script>
-    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
 </body>
 
 </html>
