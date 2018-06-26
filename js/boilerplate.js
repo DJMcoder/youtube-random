@@ -1,5 +1,7 @@
 // Handles YouTube API requests
 // Written mostly by Google, with some edits from David Melisso
+// Original found @ https://developers.google.com/youtube/v3/docs/search/list
+// Found under the Javascript tab under Usage
 
 /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
 
@@ -33,12 +35,12 @@ function initClient() {
 
         // Call handleAuthClick function when user clicks on "Authorize" button.
         $('#execute-request-button').click(function () {
-            handleAuthClick(event);
+            handleAuthClick();
         });
     });
 }
 
-function handleAuthClick(event) {
+function handleAuthClick() {
     // Sign user in after click on auth button.
     GoogleAuth.signIn();
 }
