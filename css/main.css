@@ -23,19 +23,14 @@
     left: 0;
 }
 
-#execute-request-button {
+.button {
     outline: none;
-    display: none;
     background: transparent;
-    position: absolute;
     cursor: pointer;
     width: fit-content;
     padding: 10px;
     border-radius: 10px;
     border: white 1px solid;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,51 +40,32 @@
     transition: color 0.3s, background-color 0.3s;
 }
 
-#execute-request-button:hover {
+.button:hover {
     background-color: white;
     color: red;
+}
+
+#execute-request-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #find-video {
     display: none;
     position: absolute;
-    cursor: pointer;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    border: white 1px solid;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-#find-video:hover {
-    background-color: white;
-    color: red;
 }
 
 #find-another  {
     display: none;
     position: absolute;
-    width: fit-content;
-    border-radius: 10px;
-    bottom: 0;
+    bottom: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s, background-color 0.3s;
     margin: 0;
 }
 
