@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!--
+    Written by David Melisso Summer 2018 as an example program for the LaunchX summer camp at MIT.
+    Finds random youtube videos.
+    Uses JQuery and Youtube API.
+    JQuery: https://jquery.com/
+    Youtube API: https://developers.google.com/youtube/
+-->
+<html>
+
+<head>
+    <title>Random Youtube Video Finder</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <meta charset='utf-8' />
+</head>
+
+<body>
+
+    <div id="test"></div>
+    <div id="hover-area"></div>
+
+    <div id="cover">
+        <button id="execute-request-button">Log In</button>
+        <div id="find-video">Find Random Video</div>
+        <div id="find-another">Find Another Random Video</div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/boilerplate.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+</body>
+
+</html>

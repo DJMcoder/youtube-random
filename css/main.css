@@ -1,0 +1,106 @@
+#test {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+#test > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cover {
+    background-color: #ff0000;
+    width: 100vw;
+    height: 100vh;
+    transition: top 0.5s ease-in-out, left 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#execute-request-button {
+    outline: none;
+    display: none;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    border: white 1px solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#execute-request-button:hover {
+    background-color: white;
+    color: red;
+}
+
+#find-video {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    border: white 1px solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#find-video:hover {
+    background-color: white;
+    color: red;
+}
+
+#find-another  {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    border-radius: 10px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s, background-color 0.3s;
+    margin: 0;
+}
+
+#hover-area {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: transparent;
+    z-index: 1;
+    cursor: pointer;
+}
+
